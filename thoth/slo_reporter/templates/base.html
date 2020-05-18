@@ -12,11 +12,30 @@
 </head>
 
 <body>
-    <div class="container">
-        <h2>{% block title %}{% endblock %}</h2>
-        <table>
+    <div class="container-fluid container-cards-pf">
+        <div class="row row-cards-pf">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="card-pf card-pf-accented card-pf-aggregate-status">
+                    <h2 class="card-pf-title">
+                        <span class="fa fa-info"></span>Thoth Knowledge Graph
+                    </h2>
+                    <div class="card-pf-body">
+                        <p class="card-pf-aggregate-status-notifications">
+                            <span class="card-pf-aggregate-status-notification">
+                                data goes here
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <h2 class="pf-title">{% block title %}{% endblock %}</h2>
+        <table class="table table-bordered table-hover table-treegrid">
             {% block classes %}{% endblock %}
-            {% block inputs %}{% endblock %
+            {% block inputs %}{% endblock %}
 
         </table>
     </div>
